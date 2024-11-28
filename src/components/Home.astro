@@ -1,0 +1,75 @@
+---
+import ButtonEffect from "./ButtonEffect";
+import Proyectosicon from "./icons/Proyectosicon.astro";
+import Sabermas from "./icons/Sabermas.astro";
+---
+
+<section class="h-dvh grid place-content-center max-w-5xl m-auto px-4">
+  <div class="flex flex-col items-center">
+    <h1 class="text-7xl bg-clip-text">Rodrigo Gimenez</h1>
+    <h2 class="-mt-2 text-2xl luz">Desarrollador Front-End</h2>
+  </div>
+  <div class="flex items-center gap-4 justify-center mt-4">
+    <button
+      style="--iluminacion: #0096fa"
+      class="flex items-center gap-2 bg-slate-700/50 hover:bg-sky-600/50 px-3 btn py-2 rounded-full iluminacion"
+    >
+      <Sabermas class="size-6" />
+      Saber mas
+    </button>
+    <button
+      style="--iluminacion: #0096fa"
+      class="flex items-center gap-2 bg-slate-700/50 hover:bg-sky-600/50 px-3 btn py-2 rounded-full iluminacion"
+    >
+      <Proyectosicon class="size-6" />
+      Proyectos
+    </button>
+    <ButtonEffect client:load />
+  </div>
+</section>
+
+<style>
+  h1 {
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ffffff 30%, #888888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .luz {
+    background: linear-gradient(to right, #0096fa 35%, #004175 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+  .iluminacion {
+    position: relative;
+    overflow: hidden;
+  }
+  .iluminacion::before {
+    content: "";
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+    background: var(--iluminacion);
+    z-index: -1;
+    filter: blur(10px);
+    transform: translate(-50%, -50%);
+    top: var(--y, 50%);
+    left: var(--x, 50%);
+    opacity: 0;
+    transition:
+      opacity 0.3s ease,
+      transform 0.1s linear;
+  }
+
+  .iluminacion.active::before {
+    opacity: 1;
+  }
+</style>
