@@ -1,73 +1,95 @@
 ---
+import Arrowmove from "./Arrowmove";
+import ButtonEffect from "./ButtonEffect";
+import Arrowicon from "./icons/Arrowicon.astro";
+import Cssicon from "./icons/Cssicon.astro";
 import Cvicon from "./icons/Cvicon.astro";
+import Downloadicon from "./icons/Downloadicon.astro";
+import Experienceicon from "./icons/Experienceicon.astro";
+import Htmlicon from "./icons/Htmlicon.astro";
+import Jsicon from "./icons/Jsicon.astro";
 import Mailicon from "./icons/Mailicon.astro";
+import Proyectosicon from "./icons/Proyectosicon.astro";
 import Telegramicon from "./icons/Telegramicon.astro";
+import Viewicon from "./icons/Viewicon.astro";
+import Lineatiempo from "./Lineatiempo.astro";
 import Sectioncontainer from "./Sectioncontainer.astro";
 ---
-<div class="border border-[#242223]"></div>
-<Sectioncontainer >
-   <div class=" grid md:grid-cols-12 md:grid-rows-9 h-dvh md:border border-[#242223] md:border-t-0 border-l-0">
-     <a href="" class="col-span-1 md:col-span-4 hover:bg-slate-900/15 md:row-span-1 md:border border-[#242223] flex items-center pl-4" >
-                 <div class="flex gap-2 items-center uppercase font-medium">
-                     <Mailicon class="size-6   fill-blue-400"/>
-                     <h2>Contactame</h2>
-                 </div>
-     </a>
-     <a href="" class="col-span-1 md:col-span-4 hover:bg-slate-900/15 md:row-span-1 md:border border-[#242223] border-t-0 md:border-l-0 flex items-center pl-4" >
-                 <div class="flex gap-2 items-center uppercase font-medium">
-                     <Telegramicon />
-                     <h2>Telegram</h2>
-                 </div>
-     </a>
-     <a href="" class="col-span-1 md:col-span-4 hover:bg-slate-900/15 md:row-span-1 md:border border-[#242223] border-t-0 md:border-l-0 flex items-center pl-4" >
-                 <div class="flex gap-2 items-center uppercase font-medium">
-                     <Cvicon />
-                     <h2>cv</h2>
-                 </div>
-     </a>
-     <section class="md:col-span-6 py-4 pl-7  row-span-7 border border-[#242223] border-t-0">
-        
-        <ol class="relative border-s dark:border-gray-700">                  
-            <li class="mb-10 ms-6">            
-                <span class="absolute flex items-center justify-center w-6 h-6 dark:bg-blue-900 rounded-full -start-3 ring-8 dark:ring-gray-900">
-                    <svg class="w-2.5 h-2.5 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                    </svg>
-                </span>
-                <h3 class="flex items-center mb-1 text-lg font-semibold dark:text-white">Flowbite Application UI v2.0.0 <span class="dark:bg-blue-900 dark:text-blue-300 text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3">Latest</span></h3>
-                <time class="block mb-2 text-sm font-normal leading-none dark:text-gray-500">Released on January 13th, 2022</time>
-                <p class="mb-4 text-base font-normal dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
-                <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600 rounded-lg dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
-                    <svg class="w-3.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
-                        <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
-                    </svg> Download ZIP
-                </a>
-            </li>
-            <li class="mb-10 ms-6">
-                <span class="absolute flex items-center justify-center w-6 h-6 dark:bg-blue-900 rounded-full -start-3 ring-8 dark:ring-gray-900">
-                    <svg class="w-2.5 h-2.5 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                    </svg>
-                </span>
-                <h3 class="mb-1 text-lg font-semibold dark:text-white">Flowbite Figma v1.3.0</h3>
-                <time class="block mb-2 text-sm font-normal leading-none dark:text-gray-500">Released on December 7th, 2021</time>
-                <p class="text-base font-normal dark:text-gray-400">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
-            </li>
-            <li class="ms-6">
-                <span class="absolute flex items-center justify-center w-6 h-6 dark:bg-blue-900 rounded-full -start-3 ring-8 dark:ring-gray-900">
-                    <svg class="w-2.5 h-2.5 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                    </svg>
-                </span>
-                <h3 class="mb-1 text-lg font-semibold dark:text-white">Flowbite Library v1.2.2</h3>
-                <time class="block mb-2 text-sm font-normal leading-none dark:text-gray-500">Released on December 2nd, 2021</time>
-                <p class="text-base font-normal dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
-            </li>
-        </ol>
-        
 
-     </section>
-     <section class="md:col-span-6">a</section>
-   </div>
-</Sectioncontainer>
+<div class="border border-[#242223]"></div>
+<section>
+  <div
+    class="grid md:grid-cols-12 md:grid-rows-9 h-dvh md:border border-[#242223] md:border-t-0 border-l-0"
+  >
+    <button
+      class="col-span-1 md:col-span-4 hover:bg-slate-900/15 md:row-span-1 md:border border-[#242223] pl-4 pr-2 btn-arrow btn iluminacion"
+      style="--iluminacion: #0096fa"
+    >
+      <a href="" class="flex items-center justify-between">
+        <div class="flex gap-2 items-center uppercase font-medium">
+          <Mailicon class="size-6 fill-blue-400" />
+          <h2>Contactame</h2>
+        </div>
+        <Arrowicon class="size-8 arrow-icon" />
+      </a>
+    </button>
+    <button
+      class="col-span-1 md:col-span-4 hover:bg-slate-900/15 md:row-span-1 md:border border-[#242223] pl-4 pr-2 btn-arrow btn iluminacion"
+      style="--iluminacion: #0096fa"
+    >
+      <a href="" class="flex justify-between">
+        <div class="flex gap-2 items-center uppercase font-medium">
+          <Telegramicon />
+          <h2>Telegram</h2>
+        </div>
+        <Arrowicon class="size-8 arrow-icon" />
+      </a>
+    </button>
+    <Arrowmove client:load />
+
+    <button
+      class="col-span-1 md:col-span-4 hover:bg-slate-900/15 md:row-span-1 md:border border-[#242223] pl-4 pr-2 btn-arrow btn iluminacion flex justify-between items-center cursor-default"
+      style="--iluminacion:rgba(255, 255, 255, 0.514)"
+    >
+      <div class="flex gap-2 items-center uppercase font-medium">
+        <Cvicon />
+        <h2>cv</h2>
+      </div>
+      <div class="flex gap-4 items-center">
+        <Viewicon class="hover:stroke-sky-500 cursor-pointer size-8" />
+        <Downloadicon class="hover:stroke-sky-500 cursor-pointer size-8" />
+      </div>
+    </button>
+    <ButtonEffect client:load />
+    <section
+      class="md:col-span-6 py-4 pl-7 row-span-6 border border-[#242223] border-t-1 md:border-t-0  mt-4 md:mt-0"
+    >
+    <h2 class="text-sky-700 flex items-center gap-2 text-xl"><Proyectosicon/> Experiencia</h2>
+      <ol class="relative border-s dark:border-gray-700 my-10">
+        <Lineatiempo
+          titulo="Comienzo y aprendizaje"
+          tiempo="27 de febrero del 2023"
+          texto="Me inscribi en el curso de diplomatura en iniciación al desarollo web, donde aprendi"
+          habilidades="(HTML | CSS | JS | MYSQL)"
+        >
+    </Lineatiempo>
+        <Lineatiempo
+          titulo="Nuevo comienzo"
+          tiempo="07 de agosto del 2023"
+          texto="Me volvi a inscribir en otro curso diferente donde pude aprender a manejar nuevas habilidades como desarrollador web"
+          habilidades="(NEXT JS | TAILWIND | DATABASE | TYPESCRIPT)"
+        >
+    
+    </Lineatiempo>
+        <Lineatiempo
+          titulo="Actualmente"
+          tiempo="07 de diciembre del 2023"
+          texto="Sigo aprendiendo nuevas habidades"
+        >
+    
+    </Lineatiempo>
+      </ol>
+    </section>
+    <section class="md:col-span-6 md:row-span-6">a</section>
+  </div>
+</section>

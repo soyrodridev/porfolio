@@ -41,36 +41,5 @@ import Sabermas from "./icons/Sabermas.astro";
     color: transparent;
   }
 
-  .luz {
-    background: linear-gradient(to right, #0096fa 35%, #004175 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-  }
-  .iluminacion {
-    position: relative;
-    overflow: hidden;
-  }
-  .iluminacion::before {
-    content: "";
-    position: absolute;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 9999px;
-    background: var(--iluminacion);
-    z-index: -1;
-    filter: blur(10px);
-    transform: translate(-50%, -50%);
-    top: var(--y, 50%);
-    left: var(--x, 50%);
-    opacity: 0;
-    transition:
-      opacity 0.3s ease,
-      transform 0.1s linear;
-  }
-
-  .iluminacion.active::before {
-    opacity: 1;
-  }
+  
 </style>
