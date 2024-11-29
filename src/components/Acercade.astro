@@ -4,16 +4,19 @@ import ButtonEffect from "./ButtonEffect";
 import Arrowicon from "./icons/Arrowicon.astro";
 import Cssicon from "./icons/Cssicon.astro";
 import Cvicon from "./icons/Cvicon.astro";
+import Databaseicon from "./icons/Databaseicon.astro";
 import Downloadicon from "./icons/Downloadicon.astro";
-import Experienceicon from "./icons/Experienceicon.astro";
 import Htmlicon from "./icons/Htmlicon.astro";
 import Jsicon from "./icons/Jsicon.astro";
 import Mailicon from "./icons/Mailicon.astro";
+import Mysqlicon from "./icons/Mysqlicon.astro";
+import Nextjsicon from "./icons/Nextjsicon.astro";
 import Proyectosicon from "./icons/Proyectosicon.astro";
+import Tailwindicon from "./icons/Tailwindicon.astro";
 import Telegramicon from "./icons/Telegramicon.astro";
+import Typescripticon from "./icons/Typescripticon.astro";
 import Viewicon from "./icons/Viewicon.astro";
 import Lineatiempo from "./Lineatiempo.astro";
-import Sectioncontainer from "./Sectioncontainer.astro";
 ---
 
 <div class="border border-[#242223]"></div>
@@ -61,35 +64,68 @@ import Sectioncontainer from "./Sectioncontainer.astro";
       </div>
     </button>
     <ButtonEffect client:load />
+    <section class="md:col-span-6 md:row-span-7 py-4 pl-7 row-span-7 border border-[#242223] border-t-1 md:border-t-0  mt-4 md:mt-0">
+        <img src="/rodridev.png" alt="Imagen de Rodrigo Gimenez" class="size-20">
+        <h2 class="text-sky-700 flex items-center gap-2 text-xl">Sobre mi</h2>
+        <p class="mb-3  text-gray-400 pr-2 md:pr-4">Desarrollador Frontend de 23 años, con experiencia intermedia en tecnologías frontend y conocimientos básicos de backend. Como autodidacta, siempre busco nuevas oportunidades de aprendizaje y desafíos que impulsen mi crecimiento y contribuyan a soluciones innovadoras.</p>
+
+    </section>
     <section
-      class="md:col-span-6 py-4 pl-7 row-span-6 border border-[#242223] border-t-1 md:border-t-0  mt-4 md:mt-0"
+      class="md:col-span-6 py-4 pl-7 row-span-7 border border-[#242223] border-t-1 md:border-t-0  mt-4 md:mt-0"
     >
-    <h2 class="text-sky-700 flex items-center gap-2 text-xl"><Proyectosicon/> Experiencia</h2>
-      <ol class="relative border-s dark:border-gray-700 my-10">
+    <h2 class="text-sky-700 flex items-center gap-2 text-xl"><Proyectosicon/> Educacion</h2>
+      <ol class="relative border-s dark:border-gray-700 mt-5">
         <Lineatiempo
-          titulo="Comienzo y aprendizaje"
-          tiempo="27 de febrero del 2023"
-          texto="Me inscribi en el curso de diplomatura en iniciación al desarollo web, donde aprendi"
-          habilidades="(HTML | CSS | JS | MYSQL)"
-        >
-    </Lineatiempo>
-        <Lineatiempo
-          titulo="Nuevo comienzo"
+            titulo="Actualmente"
+            tiempo="07 de diciembre del 2023"
+            texto="Sigo aprendiendo nuevas habidades"
+          >
+          
+          </Lineatiempo>
+          <Lineatiempo
+          titulo="Diplomatura en Desarrollo Web con NEXTJS"
           tiempo="07 de agosto del 2023"
           texto="Me volvi a inscribir en otro curso diferente donde pude aprender a manejar nuevas habilidades como desarrollador web"
-          habilidades="(NEXT JS | TAILWIND | DATABASE | TYPESCRIPT)"
-        >
-    
-    </Lineatiempo>
+          >
+          <ul class="flex flex-row mb-2 gap-x-2 my-2">
+            <li>
+                <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Nextjsicon class="size-4" /> Next.js </span>
+            </li>
+            <li>
+                <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Tailwindicon class="size-4" /> Tailwind </span>
+            </li>
+            <li>
+                <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Databaseicon class="size-4" /> DataBase </span>
+            </li>
+            <li>
+                <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Typescripticon class="size-4" /> TypeScript </span>
+            </li>
+        </ul>
+          </Lineatiempo>
+          
         <Lineatiempo
-          titulo="Actualmente"
-          tiempo="07 de diciembre del 2023"
-          texto="Sigo aprendiendo nuevas habidades"
+          titulo="Diplomatura en Iniciación al Desarrollo Web con JAVASCRIPT"
+          tiempo="27 de febrero del 2023"
+          texto="Me inscribi en el curso de diplomatura en iniciación al desarollo web, donde aprendi"
         >
-    
-    </Lineatiempo>
+        <ul class="flex flex-row mb-2 gap-x-2 my-2">
+            <li>
+                <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Htmlicon class="size-4" /> HTML </span>
+            </li>
+            <li>
+                <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Cssicon class="size-4" /> CSS </span>
+            </li>
+            <li>
+                <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Jsicon class="size-4" /> JAVASCRIPT </span>
+            </li>
+            <li>
+                <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Mysqlicon class="size-4" /> MY SQL </span>
+            </li>
+        </ul>
+        </Lineatiempo>
+        
       </ol>
     </section>
-    <section class="md:col-span-6 md:row-span-6">a</section>
+    
   </div>
 </section>
