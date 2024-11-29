@@ -20,12 +20,13 @@ import Lineatiempo from "./Lineatiempo.astro";
 ---
 
 <div class="border border-[#242223]"></div>
-<section class="md:max-w-6xl md:m-auto">
+<section class="md:max-w-6xl md:m-auto w-full overflow-hidden">
   <div
-    class="grid md:grid-cols-12 md:grid-rows-9 h-dvh md:border border-[#242223] md:border-t-0 border-l-0"
+    class="grid md:grid-cols-12 h-36 md:h-20 md:border border-[#242223] md:border-t-0 border-l-0 w-full "
   >
+  <!-- Boton group   -->
     <button
-      class="col-span-1 md:col-span-4 hover:bg-slate-900/15 md:row-span-1 md:border border-[#242223] pl-4 pr-2 btn-arrow btn iluminacion"
+      class="col-span-1 md:col-span-4 hover:bg-slate-900/15  md:border border-[#242223] pl-4 pr-2 btn-arrow btn iluminacion"
       style="--iluminacion: #0096fa"
     >
       <a href="" class="flex items-center justify-between">
@@ -37,7 +38,7 @@ import Lineatiempo from "./Lineatiempo.astro";
       </a>
     </button>
     <button
-      class="col-span-1 md:col-span-4 hover:bg-slate-900/15 md:row-span-1 md:border border-[#242223] pl-4 pr-2 btn-arrow btn iluminacion"
+      class="col-span-1 md:col-span-4 hover:bg-slate-900/15  md:border border-[#242223] pl-4 pr-2 btn-arrow btn iluminacion"
       style="--iluminacion: #0096fa"
     >
       <a href="" class="flex justify-between">
@@ -51,7 +52,7 @@ import Lineatiempo from "./Lineatiempo.astro";
     <Arrowmove client:load />
 
     <button
-      class="col-span-1 md:col-span-4 hover:bg-slate-900/15 md:row-span-1 md:border border-[#242223] pl-4 pr-2 btn-arrow btn iluminacion flex justify-between items-center cursor-default"
+      class="col-span-1 md:col-span-4 hover:bg-slate-900/15  md:border border-[#242223] pl-4 pr-2 btn-arrow btn iluminacion flex justify-between items-center cursor-default"
       style="--iluminacion:rgba(255, 255, 255, 0.514)"
     >
       <div class="flex gap-2 items-center uppercase font-medium">
@@ -65,62 +66,115 @@ import Lineatiempo from "./Lineatiempo.astro";
     </button>
     <ButtonEffect client:load />
     
+  </div>
+
+
+
+  <!-- Segunda seccion dividida -->
+  <section class="grid md:grid-cols-12 w-full px-2">
+    <!-- <section class="md:col-span-6 w-full px-4 py-4 md:grid md:place-content-center ">
+      <div class="w-full md:size-[500px] overflow-hidden border border-[#242223] relative  rounded-2xl grid place-content-center">
+        <div class="w-full h-[.10rem] bg-[#242223] absolute inset-0 top-1/2 bottom-1/2 z-0"></div>
+        <div class="w-[.10rem] h-full bg-[#242223] absolute left-1/2 right-1/2 z-0"></div>
+        <section class="size-[250px] md:size-[450px] z-1  bg-gris/50 backdrop-blur rounded-2xl p-2">
+          <img src="/rodridev.png" alt="Imagen de Rodrigo Gimenez" class="size-28">
+          <h2 class="text-sky-700 flex items-center gap-2 text-xl">
+            <Proyectosicon /> Educacion
+          </h2>
+        </section>
+        
+        
+      </div>
+     </section> -->
+
+
+    <!-- section de educacion     -->
     <section
-      class="md:col-span-6 py-4 pl-7 row-span-7 border border-[#242223] border-t-1 md:border-t-0  pt-4 md:mt-0"
+      class="md:col-span-6 py-4 pl-7  border border-[#242223] border-t-1 md:border-t-0 pt-4 md:mt-0 w-full pr-2"
     >
-    <h2 class="text-sky-700 flex items-center gap-2 text-xl"><Proyectosicon/> Educacion</h2>
+      <h2 class="text-sky-700 flex items-center gap-2 text-xl">
+        <Proyectosicon /> Educacion
+      </h2>
       <ol class="relative border-s dark:border-gray-700 mt-5">
         <Lineatiempo
-            titulo="Actualmente"
-            tiempo="07 de diciembre del 2023"
-            texto="Sigo aprendiendo nuevas habidades"
-          >
-          
-          </Lineatiempo>
-          <Lineatiempo
+          titulo="Actualmente"
+          tiempo="07 de diciembre del 2023"
+          texto="Sigo aprendiendo nuevas habidades"
+        />
+        <Lineatiempo
           titulo="Diplomatura en Desarrollo Web con NEXTJS"
           tiempo="07 de agosto del 2023"
           texto="Me volvi a inscribir en otro curso diferente donde pude aprender a manejar nuevas habilidades como desarrollador web"
-          >
+        >
           <ul class="flex flex-row mb-2 gap-x-2 my-2">
             <li>
-                <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Nextjsicon class="size-4" /> Next.js </span>
+              <span
+                class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2"
+              >
+                <Nextjsicon class="size-4" /> Next.js
+              </span>
             </li>
             <li>
-                <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Tailwindicon class="size-4" /> Tailwind </span>
+              <span
+                class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2"
+              >
+                <Tailwindicon class="size-4" /> Tailwind
+              </span>
             </li>
             <li>
-                <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Databaseicon class="size-4" /> DataBase </span>
+              <span
+                class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2"
+              >
+                <Databaseicon class="size-4" /> DataBase
+              </span>
             </li>
             <li>
-                <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Typescripticon class="size-4" /> TypeScript </span>
+              <span
+                class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2"
+              >
+                <Typescripticon class="size-4" /> TypeScript
+              </span>
             </li>
-        </ul>
-          </Lineatiempo>
-          
+          </ul>
+        </Lineatiempo>
+
         <Lineatiempo
           titulo="Diplomatura en Iniciación al Desarrollo Web con JAVASCRIPT"
           tiempo="27 de febrero del 2023"
           texto="Me inscribi en el curso de diplomatura en iniciación al desarollo web, donde aprendi"
         >
-        <ul class="flex flex-row mb-2 gap-x-2 my-2">
+          <ul class="flex flex-row mb-2 gap-x-2 my-2">
             <li>
-                <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Htmlicon class="size-4" /> HTML </span>
+              <span
+                class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2"
+              >
+                <Htmlicon class="size-4" /> HTML
+              </span>
             </li>
             <li>
-                <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Cssicon class="size-4" /> CSS </span>
+              <span
+                class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2"
+              >
+                <Cssicon class="size-4" /> CSS
+              </span>
             </li>
             <li>
-                <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Jsicon class="size-4" /> JAVASCRIPT </span>
+              <span
+                class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2"
+              >
+                <Jsicon class="size-4" /> JAVASCRIPT
+              </span>
             </li>
             <li>
-                <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Mysqlicon class="size-4" /> MY SQL </span>
+              <span
+                class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2"
+              >
+                <Mysqlicon class="size-4" /> MY SQL
+              </span>
             </li>
-        </ul>
+          </ul>
         </Lineatiempo>
-        
       </ol>
     </section>
-    
-  </div>
+  </section>
 </section>
