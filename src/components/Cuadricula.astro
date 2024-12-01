@@ -1,8 +1,8 @@
 <div
-  class="z-[5] pointer-events-none absolute inset-0 flex w-screen items-center justify-center overflow-hidden [mask-image:radial-gradient(transparent_15%,white)]"
+  class="pointer-events-none absolute inset-0 flex w-full items-center justify-center overflow-hidden mask-radial"
 >
   <svg
-    class="absolute z-[5] left-0 top-0 size-full stroke-white/20 stroke-[1] [mask-image:linear-gradient(transparent_15%,white,transparent_85%)]"
+    class="absolute z-[5] left-0 top-0 w-full h-full stroke-white/20 stroke-[1] [mask-image:linear-gradient(transparent_15%,white,transparent_85%)]"
     data-n-ids='{"1a4MN34vH0:0":"1a4MN34vH0:0"}'
   >
     <rect
@@ -122,3 +122,12 @@
     </defs>
   </svg>
 </div>
+
+
+<style>
+  .mask-radial {
+  mask-image: radial-gradient(transparent 15%, white);
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+</style>

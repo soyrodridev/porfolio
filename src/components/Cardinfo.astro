@@ -1,0 +1,67 @@
+---
+import CardIlumination from "./CardIlumination";
+import GitHub from "./icons/GitHub.astro";
+import Linkedin from "./icons/Linkedin.astro";
+import Proyectosicon from "./icons/Proyectosicon.astro";
+---
+
+<section class="w-full  mt-4 ">
+      <div class="w-full h-[460px] md:h-[25rem] overflow-hidden border border-[#242223] relative  rounded-2xl ">
+        <div class="w-full h-[.10rem] bg-[#242223] absolute inset-0 top-1/2 bottom-1/2 z-0"></div>
+        <div class="w-[.10rem] h-full bg-[#242223] absolute left-1/2 right-1/2 z-0"></div>
+        <section class="absolute inset-4  z-1  ">
+          <div class=" bg-gris/50 backdrop-blur rounded-2xl p-2 relative bgbefore">
+            <div class="flex gap-4 justify-start pl-4 py-4">
+              <img src="/rodridev.png" alt="Imagen de Rodrigo Gimenez" class="size-16">
+              <div class="flex flex-col justify-center">
+                <h2 class="text-white font-bold flex items-center gap-2 text-2xl">
+                  Rodrigo Gimenez
+                </h2>
+                <h3 class="text-sky-400/80">Un poco mas sobre mi</h3>
+              </div>
+            </div>
+            <p class="text-lg text-balance text-gray-300">Desarrollador Frontend de 23 años, con experiencia intermedia en tecnologías frontend y conocimientos básicos de backend. Como autodidacta, siempre busco nuevas oportunidades de aprendizaje y desafíos que impulsen mi crecimiento y contribuyan a soluciones innovadoras.</p>
+            <div class="flex gap-4 mt-4 pl-1">
+              <a href="" class="flex items-center gap-1 bg-gris hover:bg-[#292828] px-2 py-1 text-lg  rounded-lg">
+                <Linkedin class="size-4"/> Linkedin
+              </a>
+              <a href="" class="flex items-center gap-1 bg-gris hover:bg-[#292828] px-2 py-1 text-lg rounded-lg">
+                <GitHub class="size-4"/> GitHub
+              </a>
+            </div>
+          </div>
+          <CardIlumination client:load/>
+        </section>
+        
+        
+      </div>
+     </section>
+
+
+     <style>
+      .bgbefore{
+        overflow: hidden;
+        transform-style: preserve-3d;
+        transition: transform 0.3s ease;
+      }
+      .bgbefore::before{
+        content: "";
+        z-index: -1;
+        position: absolute;
+        width: 10rem;
+        height: 10rem;
+        background: #036aa13f ;
+        border-radius: 999px;
+        filter: blur(50px);
+        transform: translate(-50%, -50%);
+    top: var(--y, 50%);
+    left: var(--x, 50%);
+    opacity: 0;
+    transition:
+      opacity 0.3s ease,
+      transform 0.1s linear;
+      }
+      .bgbefore.active::before {
+    opacity: 1;
+  }
+     </style>

@@ -1,0 +1,52 @@
+---
+import Arrowmove from "./Arrowmove";
+import ButtonEffect from "./ButtonEffect";
+import Arrowicon from "./icons/Arrowicon.astro";
+import Cvicon from "./icons/Cvicon.astro";
+import Downloadicon from "./icons/Downloadicon.astro";
+import Mailicon from "./icons/Mailicon.astro";
+import Telegramicon from "./icons/Telegramicon.astro";
+import Viewicon from "./icons/Viewicon.astro";
+---
+
+<!-- Boton group   -->
+<button
+class="col-span-1 h-20 hover:bg-slate-900/15  md:border border-[#242223] pl-4 pr-2 btn-arrow btn iluminacion"
+style="--iluminacion: #0096fa"
+>
+<a href="" class="flex items-center justify-between">
+  <div class="flex gap-2 items-center uppercase font-medium">
+    <Mailicon class="size-6 fill-blue-400" />
+    <h2>Contactame</h2>
+  </div>
+  <Arrowicon class="size-8 arrow-icon" />
+</a>
+</button>
+<button
+class="col-span-1 h-20  hover:bg-slate-900/15  md:border border-[#242223] pl-4 pr-2 btn-arrow btn iluminacion"
+style="--iluminacion: #0096fa"
+>
+<a href="" class="flex justify-between">
+  <div class="flex gap-2 items-center uppercase font-medium">
+    <Telegramicon />
+    <h2>Telegram</h2>
+  </div>
+  <Arrowicon class="size-8 arrow-icon" />
+</a>
+</button>
+<Arrowmove client:load />
+
+<button
+class="col-span-1 h-20  hover:bg-slate-900/15  md:border border-[#242223] pl-4 pr-2 btn-arrow btn iluminacion flex justify-between items-center cursor-default"
+style="--iluminacion:rgba(255, 255, 255, 0.514)"
+>
+<div class="flex gap-2 items-center uppercase font-medium">
+  <Cvicon />
+  <h2>cv</h2>
+</div>
+<div class="flex gap-4 items-center">
+  <Viewicon class="hover:stroke-sky-500 cursor-pointer size-8" />
+  <Downloadicon class="hover:stroke-sky-500 cursor-pointer size-8" />
+</div>
+</button>
+<ButtonEffect client:load />

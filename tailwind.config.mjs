@@ -5,6 +5,9 @@ export default {
 		extend: {
 			backgroundColor: {
 				"gris": "#242223"
+			},
+			borderColor: {
+				"gris": "#242223"
 			}
 		},
 	},

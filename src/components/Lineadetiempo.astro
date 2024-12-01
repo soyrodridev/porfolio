@@ -1,0 +1,63 @@
+---
+import Cssicon from "./icons/Cssicon.astro";
+import Databaseicon from "./icons/Databaseicon.astro";
+import Htmlicon from "./icons/Htmlicon.astro";
+import Jsicon from "./icons/Jsicon.astro";
+import Mysqlicon from "./icons/Mysqlicon.astro";
+import Nextjsicon from "./icons/Nextjsicon.astro";
+import Tailwindicon from "./icons/Tailwindicon.astro";
+import Typescripticon from "./icons/Typescripticon.astro";
+import Lineatiempo from "./Lineatiempo.astro";
+---
+
+<ol class="relative border-s dark:border-gray-700 mt-5 w-full ">
+    <Lineatiempo
+        titulo="Actualmente"
+        tiempo="07 de diciembre del 2023"
+        texto="Sigo aprendiendo nuevas habidades"
+      >
+      
+      </Lineatiempo>
+      <Lineatiempo
+      titulo="Diplomatura en Desarrollo Web con NEXTJS"
+      tiempo="07 de agosto del 2023"
+      texto="Me volvi a inscribir en otro curso diferente donde pude aprender a manejar nuevas habilidades como desarrollador web"
+      >
+      <ul class="flex flex-row flex-wrap  mb-2 gap-2 my-2">
+        <li>
+            <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Nextjsicon class="size-4" /> Next.js </span>
+        </li>
+        <li>
+            <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Tailwindicon class="size-4" /> Tailwind </span>
+        </li>
+        <li>
+            <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Databaseicon class="size-4" /> DataBase </span>
+        </li>
+        <li>
+            <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Typescripticon class="size-4" /> TypeScript </span>
+        </li>
+    </ul>
+      </Lineatiempo>
+      
+    <Lineatiempo
+      titulo="Diplomatura en Iniciación al Desarrollo Web con JAVASCRIPT"
+      tiempo="27 de febrero del 2023"
+      texto="Me inscribi en el curso de diplomatura en iniciación al desarollo web, donde aprendi"
+    >
+    <ul class="flex flex-row flex-wrap mb-2 gap-2 my-2">
+        <li>
+            <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Htmlicon class="size-4" /> HTML </span>
+        </li>
+        <li>
+            <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Cssicon class="size-4" /> CSS </span>
+        </li>
+        <li>
+            <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Jsicon class="size-4" /> JAVASCRIPT </span>
+        </li>
+        <li>
+            <span class="flex gap-x-2 rounded-full text-xs bg-[#201a175e] text-white py-1 px-2 "> <Mysqlicon class="size-4" /> MY SQL </span>
+        </li>
+    </ul>
+    </Lineatiempo>
+    
+  </ol>
