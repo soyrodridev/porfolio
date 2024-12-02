@@ -18,8 +18,8 @@ export default function CardIlumination() {
       luz.style.setProperty("--x", `${x}px`);
       luz.style.setProperty("--y", `${y}px`);
 
-      const rotateX = -deltaY * 10; 
-      const rotateY = deltaX * 10; 
+      const rotateX = -deltaY * 5; 
+      const rotateY = deltaX * 5; 
       luz.style.transform = `perspective(500px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
 
       luz.classList.add("active");

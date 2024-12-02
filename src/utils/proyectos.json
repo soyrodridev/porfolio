@@ -1,0 +1,34 @@
+[
+    {
+      "titulo": "Porfolio Dager",
+      "imagen": "/proyectos/dager.webp",
+      "descripcion": "Challenge de dager",
+      "link": "https://dager.soyrodri.dev/",
+      "nametecnology": ["Astro", "TailwindCSS"],
+      "tecnologias": ["Astroicon", "Tailwindicon"]
+    },
+    {
+      "titulo": "Tienda Shopix",
+      "imagen": "/proyectos/shopix.webp",
+      "descripcion": "Mini Ecommerce",
+      "link": "https://tiendashopix.soyrodri.dev",
+      "nametecnology": ["Next.js", "Data Base", "TypeScript"],
+      "tecnologias": ["Nextjsicon", "Databaseicon","Typescripticon"]
+    },
+    {
+      "titulo": "Tienda de postres",
+      "imagen": "/proyectos/postretienda.webp",
+      "descripcion": "Challenge de FrontEnd Mentor",
+      "link": "https://postres-tienda.soyrodri.dev/",
+      "nametecnology": ["HTML", "CSS", "JavaScript"],
+      "tecnologias": ["Htmlicon", "Cssicon","Jsicon"]
+    },
+    {
+      "titulo": "Netflow",
+      "imagen": "/proyectos/netflow.webp",
+      "descripcion": "Pagina de peliculas y series",
+      "link": "https://netflow.soyrodri.dev",
+      "nametecnology": ["HTML", "CSS", "JavaScript"],
+      "tecnologias": ["Htmlicon", "Cssicon","Jsicon"]
+    }
+  ]

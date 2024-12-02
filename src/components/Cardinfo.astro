@@ -37,31 +37,3 @@ import Proyectosicon from "./icons/Proyectosicon.astro";
       </div>
      </section>
 
-
-     <style>
-      .bgbefore{
-        overflow: hidden;
-        transform-style: preserve-3d;
-        transition: transform 0.3s ease;
-      }
-      .bgbefore::before{
-        content: "";
-        z-index: -1;
-        position: absolute;
-        width: 10rem;
-        height: 10rem;
-        background: #036aa13f ;
-        border-radius: 999px;
-        filter: blur(50px);
-        transform: translate(-50%, -50%);
-    top: var(--y, 50%);
-    left: var(--x, 50%);
-    opacity: 0;
-    transition:
-      opacity 0.3s ease,
-      transform 0.1s linear;
-      }
-      .bgbefore.active::before {
-    opacity: 1;
-  }
-     </style>

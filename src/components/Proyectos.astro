@@ -1,0 +1,72 @@
+---
+import proyectos from "../utils/proyectos.json";
+import Cssicon from "./icons/Cssicon.astro";
+import Databaseicon from "./icons/Databaseicon.astro";
+import Htmlicon from "./icons/Htmlicon.astro";
+import Jsicon from "./icons/Jsicon.astro";
+import Mysqlicon from "./icons/Mysqlicon.astro";
+import Nextjsicon from "./icons/Nextjsicon.astro";
+import Tailwindicon from "./icons/Tailwindicon.astro";
+import Typescripticon from "./icons/Typescripticon.astro";
+import Astroicon from "./icons/Astroicon.astro";
+import Proyectosicon from "./icons/Proyectosicon.astro";
+
+const components: Record<string, any> = { 
+  Htmlicon, 
+  Cssicon, 
+  Jsicon, 
+  Mysqlicon, 
+  Nextjsicon, 
+  Tailwindicon, 
+  Typescripticon, 
+  Astroicon, 
+  Databaseicon 
+};
+
+const tecnologiaNames: Record<string, string> = {
+  Htmlicon: "HTML",
+  Cssicon: "CSS",
+  Jsicon: "JavaScript",
+  Mysqlicon: "MySQL",
+  Nextjsicon: "Next.js",
+  Tailwindicon: "TailwindCSS",
+  Typescripticon: "TypeScript",
+  Astroicon: "Astro",
+  Databaseicon: "Database",
+};
+---
+
+<section class="lg:container mx-auto px-4 my-10">
+    <h2 class="text-sky-700 flex items-center gap-2 text-2xl my-4">
+        <Proyectosicon /> Proyectos
+    </h2>
+    <section class="grid md:grid-cols-2 lg:grid-cols-3 w-full gap-4">
+        {proyectos.map((info) => (
+          <article class="col-span-1 w-full bg-gris/50 backdrop-blur rounded-xl overflow-hidden bgbefore">
+            <a href={info.link} target="_blank">
+                <div class="w-full h-60">
+                  <img src={info.imagen} alt={info.titulo} class="object-cover w-full h-full" />
+                </div>
+                <footer class="flex flex-col px-4 py-2">
+                  <div>
+                    <h2 class="text-xl uppercase font-bold">{info.titulo}</h2>
+                    <p class="text-gray-400 font-normal ">{info.descripcion}</p>
+                    <div class="flex items-center gap-2 flex-wrap my-4">
+                      {info.tecnologias.map((tec) => {
+                        const TecComponent = components[tec]; 
+                        const tecName = tecnologiaNames[tec]; 
+                        return (
+                          <span class="flex items-center gap-2 bg-gris/50 px-2 py-1 rounded-md ">
+                            {TecComponent ? <TecComponent  /> : null}
+                            <span class="text-sm">{tecName}</span>
+                          </span>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </footer>
+            </a>
+          </article>
+        ))}
+    </section>
+</section>
