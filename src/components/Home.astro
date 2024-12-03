@@ -4,8 +4,8 @@ import Cuadricula from "./Cuadricula.astro";
 import Proyectosicon from "./icons/Proyectosicon.astro";
 import Sabermas from "./icons/Sabermas.astro";
 ---
-<section class="h-dvh min-h-screen relative w-full overflow-hidden grid place-content-center container m-auto ">
-  <Cuadricula />
+<Cuadricula />
+<section class="h-dvh min-h-screen relative w-full overflow-hidden grid place-content-center  ">
   <div
     class="absolute pointer-events-none animate-fade-in bg-ambientLight left-0 top-0 h-[1380px] w-[560px] rounded-full translate-y-[-350px] rotate-[-45deg]"
   >
@@ -22,20 +22,20 @@ import Sabermas from "./icons/Sabermas.astro";
     <h2 class="-mt-2 text-xl md:text-2xl luz">Desarrollador Front-End</h2>
   </div>
   <div class="flex items-center gap-4 justify-center mt-4">
-    <button
+    <a href="#acercade"
       style="--iluminacion: #0096fa"
       class="flex items-center gap-2 bg-slate-700/50 hover:bg-sky-600/50 px-3 btn py-2 rounded-full iluminacion text-sm md:text-base"
     >
       <Sabermas class="size-5 md:size-6" />
       Saber mas
-    </button>
-    <button
+    </a>
+    <a href="#proyectos"
       style="--iluminacion: #0096fa"
       class="flex items-center gap-2 bg-slate-700/50 hover:bg-sky-600/50 px-3 btn py-2 rounded-full iluminacion text-sm md:text-base"
     >
       <Proyectosicon class="size-5 md:size-6" />
       Proyectos
-    </button>
+    </a>
     <ButtonEffect client:load />
   </div>
 </section>
